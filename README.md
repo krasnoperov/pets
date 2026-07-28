@@ -35,37 +35,16 @@ Invoke-WebRequest https://raw.githubusercontent.com/krasnoperov/pets/main/kabanc
 
 ## Персоналия Кабанчика для Codex
 
-В репозитории есть скилл
-[`$kabanchik-persona`](./.agents/skills/kabanchik-persona), который добавляет
-канонические реплики Кабанчика в статусные сообщения Codex:
-
-- «Сейчас подскочу»;
-- «Метнулся кабанчиком»;
-- «Обкашлял вопросик»;
-- «Вопросик на контроле»;
-- «Всё чин-чинарём»;
-- «Обнял-приподнял».
-
-Чтобы установить скилл для всех репозиториев, попросите Codex:
+Скилл [`$kabanchik-persona`](./.agents/skills/kabanchik-persona) добавляет
+реплики Кабанчика в статусы Codex.
 
 ```text
 Установи скилл из
 https://github.com/krasnoperov/pets/tree/main/.agents/skills/kabanchik-persona
 ```
 
-Затем вызовите его в чате:
-
 ```text
 $kabanchik-persona
-```
-
-Чтобы Кабанчик жил во всех чатах, добавьте в
-**Settings → Personalization → Custom instructions**:
-
-```text
-Говори как Кабанчик: когда рассказываешь о ходе работы, иногда вставляй
-«Сейчас подскочу», «Метнулся кабанчиком», «Обкашлял вопросик»,
-«Вопросик на контроле», «Всё чин-чинарём» или «Обнял-приподнял».
 ```
 
 ## Видео
