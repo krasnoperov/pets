@@ -1,0 +1,7 @@
+{
+  "id": "bat-storykeeper",
+  "displayName": "Bat Storykeeper",
+  "description": "A warm LearnSpeakRepeat bat who explores stories with an open book.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}

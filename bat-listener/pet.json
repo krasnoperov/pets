@@ -1,0 +1,7 @@
+{
+  "id": "bat-listener",
+  "displayName": "Bat Listener",
+  "description": "A cheerful LearnSpeakRepeat bat who listens closely and takes notes while Codex works.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}

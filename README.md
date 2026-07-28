@@ -10,28 +10,44 @@
 
 ![Кабанчик](./kabanchik/preview.gif)
 
+### [Bat Listener](./bat-listener)
+
+Весёлый слушатель LearnSpeakRepeat в наушниках, который делает заметки, пока Codex работает.
+
+![Bat Listener](./bat-listener/preview.gif)
+
+### [Bat Storykeeper](./bat-storykeeper)
+
+Тёплый хранитель историй LearnSpeakRepeat с открытой книгой.
+
+![Bat Storykeeper](./bat-storykeeper/preview.gif)
+
 ## Быстрая установка
+
+Замените `<pet-id>` на `kabanchik`, `bat-listener` или `bat-storykeeper`.
 
 macOS и Linux:
 
 ```bash
-mkdir -p "$HOME/.codex/pets/kabanchik"
-curl -L https://raw.githubusercontent.com/krasnoperov/pets/main/kabanchik/pet.json \
-  -o "$HOME/.codex/pets/kabanchik/pet.json"
-curl -L https://raw.githubusercontent.com/krasnoperov/pets/main/kabanchik/spritesheet.webp \
-  -o "$HOME/.codex/pets/kabanchik/spritesheet.webp"
+PET_ID="<pet-id>"
+mkdir -p "$HOME/.codex/pets/$PET_ID"
+curl -L "https://raw.githubusercontent.com/krasnoperov/pets/main/$PET_ID/pet.json" \
+  -o "$HOME/.codex/pets/$PET_ID/pet.json"
+curl -L "https://raw.githubusercontent.com/krasnoperov/pets/main/$PET_ID/spritesheet.webp" \
+  -o "$HOME/.codex/pets/$PET_ID/spritesheet.webp"
 ```
 
 Windows PowerShell:
 
 ```powershell
-$pet = "$env:USERPROFILE\.codex\pets\kabanchik"
+$petId = "<pet-id>"
+$pet = "$env:USERPROFILE\.codex\pets\$petId"
 New-Item -ItemType Directory -Force -Path $pet | Out-Null
-Invoke-WebRequest https://raw.githubusercontent.com/krasnoperov/pets/main/kabanchik/pet.json -OutFile "$pet\pet.json"
-Invoke-WebRequest https://raw.githubusercontent.com/krasnoperov/pets/main/kabanchik/spritesheet.webp -OutFile "$pet\spritesheet.webp"
+Invoke-WebRequest "https://raw.githubusercontent.com/krasnoperov/pets/main/$petId/pet.json" -OutFile "$pet\pet.json"
+Invoke-WebRequest "https://raw.githubusercontent.com/krasnoperov/pets/main/$petId/spritesheet.webp" -OutFile "$pet\spritesheet.webp"
 ```
 
-После установки перезапустите приложение и выберите Кабанчика в настройках питомцев.
+После установки перезапустите приложение и выберите питомца в настройках.
 
 ## Персоналия Кабанчика для Codex
 
