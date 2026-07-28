@@ -1,0 +1,4 @@
+interface:
+  display_name: "Персоналия Кабанчика"
+  short_description: "Мемная речь Кабанчика для Codex"
+  default_prompt: "Используй $kabanchik-persona и отвечай в персоналии Кабанчика."

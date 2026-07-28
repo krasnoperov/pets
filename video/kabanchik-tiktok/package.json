@@ -1,0 +1,14 @@
+{
+  "name": "kabanchik-meme-video",
+  "private": true,
+  "scripts": {
+    "render": "remotion render src/index.ts Kabanchik ../../outputs/kabanchik-video.mp4 --codec=h264 --crf=18",
+    "studio": "remotion studio src/index.ts"
+  },
+  "dependencies": {
+    "@remotion/cli": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "remotion": "latest"
+  }
+}
